@@ -1,25 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import './styles/main.sass';
+import Test from './components/Gradients';
+import GithubLink from './components/githubLink/GithubLink';
 
 function App() {
+  const [gradientType] = useState(['Linear Gradient', 'Radial Gradient']);
+
+  let circleArray = [];
+  for (let i = 0; i < gradientType.length; i++) {
+    circleArray.push(<Test key={i} gradient={gradientType[i]} />);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GithubLink />
+      <div className='App'>{circleArray}</div>
+      <footer
+        className='footer'
+        style={{
+          color: 'black',
+          width: '100%',
+          textAlign: 'center',
+          fontSize: '14px'
+        }}
+      >
+        Created by Mohit Aggarwal with Love{' '}
+        <span role='img' aria-label='heart' className='heart'>
+          ❤️
+        </span>
+      </footer>
+    </>
   );
 }
 

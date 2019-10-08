@@ -5,7 +5,7 @@ const GithubLink = () => {
   return (
     <div>
       <a
-        href='https://github.com/Mister-maker'
+        href='https://github.com/Mister-maker/gradient-generator/'
         className={styles.githubCorner}
         aria-label='View source on GitHub'
       >

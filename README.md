@@ -20,4 +20,3 @@ $ npm start
 | -------------- | --------------------------------------------------------------------------------------------- |
 | npm start      | Start webpack development server @ **localhost:3000**                                         |
 | npm run build  | Build production bundles to **./build** directory                                             |
-| npm run server | Start express server @ **localhost:3000** to serve build artifacts from **./build** directory |

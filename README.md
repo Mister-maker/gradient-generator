@@ -12,6 +12,7 @@ $ cd soundcloud-redux
 $ npm install
 $ npm start
 ```
+![ScreenShot](Screenshot-image.png)
 
 ## NPM Commands
 

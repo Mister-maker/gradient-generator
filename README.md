@@ -1,6 +1,6 @@
 # Gradient Generator
 
-A Basic Css Gradient Color Genrator Build With Reactjs. Try the [live demo](https://gradient-genrator.netlify.com).
+A Basic Css Gradient Color Genrator Build With Reactjs. Try the [live demo](https://gradients-generator.netlify.com).
 
 ## Stack
 
